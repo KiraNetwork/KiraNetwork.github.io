@@ -1,0 +1,266 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.minitabledis {
+    background: #4a2070;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+.minitabledis td.big {
+    padding: 15px 10px;
+}
+
+.minitabledis td.bigBottom {
+    padding: 5px 10px 25px 10px;
+}
+
+.minitabledis td.bigTop {
+    padding: 25px 10px 5px 10px;
+}
+
+.minitabledis td {
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.clickItem {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.clickItem:hover {
+    fill: #db4500;
+}
+
+.minitabledis .label-orange {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffca42;
+}
+
+.grid h3 {
+    text-align: left;
+}
+
+.itemPosBackLoop h2 {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.itemPosBackLoop p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.itemPosBackLoop p>b {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.itemPosBackLoop .flexDinamicContent {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+}
+
+.lable_mini {
+    font-size: 12px;
+    text-align: left;
+}
+
+.nanoline {
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.label_table {
+    position: absolute;
+    bottom: -7px;
+    z-index: 2;
+    background: #fede43;
+    border-radius: 10px;
+    color: #6c47a4;
+    right: calc(50% - 50px);
+    text-align: center;
+    width: 100px;
+    padding: 1px 10px;
+    font-size: 9px;
+}
+
+#table_things {
+    color: #ffca42;
+    width: calc(100% - 0px);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#table_things b {
+    font-weight: 900;
+}
+
+#table_things h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+
+#table_things p {
+    color: #fff;
+    line-height: 2;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+#table_things p b {
+    font-weight: 700;
+}
+
+#table_things .backColor {
+    background: #57316c;
+    border-radius: 0 0 10px 10px;
+}
+
+#table_things td {
+    background: #6c47a6;
+}
+
+#table_things .topColor {
+    background: #6c47a6;
+    border-radius: 10px 10px 0 0;
+}
+
+#table_things .border_right {
+    border-right: 3px solid #fff;
+}
+
+#table_things .border_bottom {
+    border-bottom: 0 solid rgb(214, 214, 214);
+}
+
+.flex_graph {
+    display: flex;
+}
+
+.id_desctop {
+    display: table;
+}
+
+.is_mobile {
+    display: none;
+    text-align: left;
+}
+
+.decor_container {
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.title_table .under_title_table {
+    padding: 20px 40px 10px;
+    color: #ffca42;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title_table h3 {
+    padding: 20px 20px 10px 40px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body_table {
+    padding: 20px 20px 20px 40px;
+    background: #57316c;
+    border-radius: 0 0 10px 10px;
+}
+
+.body_table p {
+    font-size: 13px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body_table .under_title_table {
+    padding: 10px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffca42;
+    font-size: 14px;
+}
+
+.under_title_table b {
+    font-weight: 900;
+}
+
+.mobilH {
+    display: none;
+}
+
+.desctopH {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .mobilH {
+        display: block;
+        padding: 50px;
+    }
+    .desctopH {
+        display: none;
+    }
+    .svg-loop {
+        margin-left: 50px;
+        width: 80%
+    }
+    .itemPosBackLoop h2 {
+        margin-top: 60px;
+        font-size: 32px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .itemPosBackLoop .flexDinamicContent {
+        min-height: auto;
+    }
+    .minimobil {
+        margin-left: 50px;
+        width: 80%
+    }
+    .itemPosBackLoop {
+        padding-left: 50px;
+    }
+    .id_desctop {
+        display: none;
+    }
+    .is_mobile {
+        display: block;
+    }
+    .grid {
+        display: block;
+        margin-left: 50px;
+        width: calc(100% - 80px);
+    }
+    .decor_container {
+        width: calc(100% - 50px);
+        background: #6c47a6;
+        margin-left: 50px;
+        padding: 0px;
+    }
+    .grid .cl {
+        margin-bottom: 50px;
+    }
+    .flex_graph {
+        flex-direction: column;
+    }
+}
